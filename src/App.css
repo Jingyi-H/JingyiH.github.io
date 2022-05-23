@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #dfddf5;
+  border-style: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, h2, h3 {
+  color: #3B2E53;
+}
+
+hr {
+  background-color: #aba7dd;
+  border-style: none;
+  height: 2px;
+}
+
+.dot {
+  background-color: inherit;
+  border-color: #cdd9df;
+  border-style: dotted none none none;
+  border-width: 5px;
+  width: 5%;
+}
+
+.content {
+  padding: 3% 18%;
+  margin-top: 6%;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.icon {
+  font-size: 1.5em; 
+  color: #aba7dd;
+  
+}
