@@ -10,10 +10,10 @@ const Footer = () => {
         <span className='icon'><FontAwesomeIcon icon={faGithub} /></span>
       </a>
       <a href='https://www.linkedin.com/in/jingyi-huang-jh99/'>
-        <span class='icon'><FontAwesomeIcon icon={faLinkedin} /></span>
+        <span className='icon'><FontAwesomeIcon icon={faLinkedin} /></span>
         </a>
       <a href='mailto: jingyih1999@gmail.com'>
-        <span class='icon'><FontAwesomeIcon icon={faEnvelope} /></span>
+        <span className='icon'><FontAwesomeIcon icon={faEnvelope} /></span>
       </a>
     </div>
   )

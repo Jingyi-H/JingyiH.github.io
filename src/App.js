@@ -1,10 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { React, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Container } from 'react-bootstrap';
-import Blocks from './components/Blocks';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Education from './components/Education.js';
+import Home from './components/Home';
+import Projects from './components/Projects';
 import './App.css';
 
 
@@ -38,25 +39,21 @@ function App() {
   ])
 
   return (
-    <div>
-      <Container fluid>
-        <Header />
-        <div className='content'>
-          <h1>Jingyi Huang</h1>
-          <p>
-            <em>Current MS student in Boston University</em>
-          </p>
-          <hr />
-          <h3>Work Experience</h3>
-          <Blocks blocks={pexp} />
-          <h3>Education</h3>
-          <Education />
-          <h3>Skills</h3>
-          <p>Python(Tensorflow, Spyder), Java (Spring Boot), SQL, JavaScript, HTML, CSS(Bootstrap)</p>
-        </div>
-        <Footer />
-      </Container>
-    </div>
+    <Router>
+      <div>
+        <Container fluid>
+          <Header />
+          <div className='content'>
+          <Routes>
+            <Route path='/' exact element={<Home />} />
+            <Route path='/projects' element={<Projects />} />
+          </Routes>
+          </div>
+          <Footer />
+        </Container>
+      </div>
+    </Router>
+    
   );
 }
 
