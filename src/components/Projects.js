@@ -6,6 +6,11 @@ const Projects = () => {
   return (
     <>
       <div>
+        <h4><a href='https://github.com/Jingyi-H/cs561_dual_bptree'>Dual B+ Tree Indexing</a></h4>
+        <p>An advanced database indexing structure aims at optimizing the write performance for nearly-sorted workload. For insertion, it outperforms the pure B+ tree indexing for workload at sortedness level of 50%.</p>
+      </div>
+      <hr />
+      <div>
         <h4><a href='https://github.com/Jingyi-H/VisualOdometry'>Visual Odometry</a></h4>
         <p>A basic implementation on visual odometry from scratch. It outputs the coordinates of the camera given captured videos. RANSAC is introduced to improve the MSE score.</p>
       </div>
@@ -39,7 +44,7 @@ const Projects = () => {
       <div>
         <h4><a href='https://github.com/Jingyi-H/Avaware-JSP'>App Store Web Application</a></h4>
         <p>
-          A full stack application using Java Servlet as backend and Bootstrap framework. 
+          A full stack application using Spring Boot as backend and React as frontend. 
           It contains basic App Store functions: sign up/in, purchase, viewing order history and so on. 
           It allows auto fill-in with uploaded id photo using a text identification API.
         </p>
