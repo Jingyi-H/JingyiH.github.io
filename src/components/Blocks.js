@@ -7,9 +7,9 @@ const Blocks = ({ blocks }) => {
 
   return (
     <>
-      {blocks.map((block) => (
-        <Table borderless>
-          <tbody>
+      <Table borderless cellSpacing={15}>
+        <tbody>
+          {blocks.map((block) => (
             <tr>
               <td>{ block.date }</td>
               <td>{ block.summary }</td>
@@ -18,18 +18,18 @@ const Blocks = ({ blocks }) => {
                 onClick={collapseBlock(block.id)} />
               </td> */}
             </tr>
-            <tr>
-              <td colSpan="2">
-                <ul>
-                  {block.bullets.map((bullet) => (
-                    <li >{ bullet }</li>
-                  )) }
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </Table>
-      ))}
+            // {/* <tr>
+            //   <td colSpan="2">
+            //     <ul>
+            //       {block.bullets.map((bullet) => (
+            //         <li >{ bullet }</li>
+            //       )) }
+            //     </ul>
+            //   </td>
+            // </tr> */}
+          ))}
+        </tbody>
+      </Table>
     </>
   )
 }
